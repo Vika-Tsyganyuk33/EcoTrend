@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эко-тренд</title>
+    <script defer src="./script/script.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header">
+            <div class="logo">
+                <a href="./index.html">
+                <img src="./img/logo.png" alt="logo">
+                <p>Эко-тренд</p></a>
+            </div>
+            <input type="checkbox" id="burger">
+            <label for="burger"></label>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="#products">Продукты</a></li>
+                    <li><a href="#me">О нас</a></li>
+                    <li><a href="#connection">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="block_poss">
+                <div class="cart-icon">
+                    <a href="#" tabindex="0"><img src="./img/icon/cart.svg" alt="cart"></a>
+                </div>
+                <div class="cart-content">
+                </div>
+                <a href="#"><img src="./img/icon/login.svg" alt="login"></a>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        
+        <section class="products" id="products">
+            <div class="filter">
+                <input type="radio" name="category" id="all" checked>
+                <label for="all">Всё</label>
+                <input type="radio" name="category" id="home">
+                <label for="home">Дача/Дом</label>
+                <input type="radio" name="category" id="eat">
+                <label for="eat">Продукты питания</label>
+                <input type="radio" name="category" id="cosmetics">
+                <label for="cosmetics">Уходовая косметика</label>
+            </div>
+            <div class="products_cards_block" id="products">
+                <p class="fz-22 product" data-category="home">Дача/Дом</p>
+                <div class="products_cards">
+                    <div class="prod_main product" data-category="home">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <img class="eco_icon" src="./img/icon/eco.svg" alt="ecoIcon">
+                        <div class="myBlock hidden-block">
+                            <p><u>Расход:</u></p>
+                            <p>Бактерии для подстилки Multi-18 в 1кг = 18-20м<sup><small>2</small></sup><br>
+                               Бактерии для подстилки Multi-25 в 1кг = 25м<sup><small>2</small></sup></p>
+                            <p><u>Срок хранения:</u> 24 месяца</p>
+                        </div>
+                        <img src="./img/products/bakterii.jpg" alt="bakterii">
+                         <div class="prod_footer">
+                            <p class="name_prod">Бактерии для подстилки животным</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">2 500 р</p>
+                                    <p class="new">2 199 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="home" data-item="Prod1">В корзину</button>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="prod_main product" data-category="home">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <img class="eco_icon" src="./img/icon/eco.svg" alt="ecoIcon">
+                        <div class="myBlock hidden-block">
+                            <p><u>Вариации:</u></p>
+                            <p>для птиц 0,25кг/ 0,5кг<br>
+                                глубокая подстилка коровы/лошади/свиньи 0,5кг<br>
+                                подстилка свинарник/козы/овцы 0,5кг<br>
+                                глубокая подстилка козы 0,5кг</p>
+                            <p><u>Срок хранения:</u> 18 месяцев</p>
+                        </div>
+                        <img src="./img/products/bacteria.jpg" alt="bakterii">
+                        <div class="prod_footer">
+                            <p class="name_prod">Живые бактерии для подстилки</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">1 299 р</p>
+                                    <p class="new">1 000 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="home" data-item="Prod2">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod_main product" data-category="home">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <img class="eco_icon" src="./img/icon/eco.svg" alt="ecoIcon">
+                        <div class="myBlock hidden-block">
+                            <p><u>Количество:</u> 2 упаковки</p>
+                            <p><u>Описание:</u></p>
+                            <p>Средство в виде порошка, не содержит хлор и фосфаты. Не наносит  вред питомцу и человеку, полностью разлагается<br>
+                                Устраняет неприятный запах, продлевает срок использования наполнителя
+                            </p>
+                        </div>
+                        <img src="./img/products/powder.jpg" alt="powder">
+                        <div class="prod_footer">
+                            <p class="name_prod">Присыпка дезинфицирующая Biodry</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">2 500 р</p>
+                                    <p class="new">1 999 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="home" data-item="Prod3">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod_main product" data-category="home">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <img class="eco_icon" src="./img/icon/eco.svg" alt="ecoIcon">
+                        <div class="myBlock hidden-block">
+                            <p><u>Количество:</u> 1 упаковка</p>
+                            <p><u>Описание:</u></p>
+                            <p>Силикагелевый наполнитель хорошо впитывает жидкость и задерживает запах. При этом сам наполнитель не вызывает аллергической реакции, он без запаха
+                            </p>
+                        </div>
+                        <img src="./img/products/litter.jpg" alt="litter">
+                        <div class="prod_footer">
+                            <p class="name_prod">Наполнитель силикагелевый для котов
+                            </p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">699 р</p>
+                                    <p class="new">500 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="home" data-item="Prod4">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod_main product" data-category="home">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <img class="eco_icon" src="./img/icon/eco.svg" alt="ecoIcon">
+                        <div class="myBlock hidden-block">
+                            <p>Марка угля: Д (длиннопламенный)</p>
+                            <p>Фракция: ОМ (М — 13–25, О — 25-50) составляет 13–50мм</p>
+                            <p>Зольность: 5-8%</p>
+                            <p>Калорийность: от 5 800кКал/кг</p>
+                        </div>
+                        <img src="./img/products/coal.jpg" alt="coal">
+                        <div class="prod_footer">
+                            <p class="name_prod">Уголь древесный</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">585 р</p>
+                                    <p class="new">399 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="home" data-item="Prod5">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod_main product" data-category="home">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <img class="eco_icon" src="./img/icon/eco.svg" alt="ecoIcon">
+                        <div class="myBlock hidden-block">
+                            <p><u>Хранение:</u></p>
+                            <p>Хранить неограниченное время при температуре от +5&#176;C до +25&#176;C в крытых сухих помещениях вдали от прямых солнечных лучей</p>
+                            <p><u>Дополнительно:</u></p>
+                            <p>Не имеет неприятного запаха.</p>
+                        </div>
+                        <img src="./img/products/ignitionFluid.jpg" alt="ignitionFluid">
+                        <div class="prod_footer">
+                            <p class="name_prod">Жидкость для розжига</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">500 р</p>
+                                    <p class="new">299 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="home" data-item="Prod6">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod_main product" data-category="home">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <img class="eco_icon" src="./img/icon/eco.svg" alt="ecoIcon">
+                        <div class="myBlock hidden-block">
+                            <p><u>Характеристика:</u></p>
+                            <p>Состав: 100% береза<br>
+                                Страна производства: Россия</p>
+                            <p><u>Хранение:</u></p>
+                            <p>Хранить в сухом, недоступном для детей и домашних животных месте<br>
+                                <u>Срок хранения:</u> 1 год</p>
+                        </div>
+                        <img src="./img/products/briquettes.jpg" alt="briquettes">
+                        <div class="prod_footer">
+                            <p class="name_prod">Топливные брикеты береза</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">450 р</p>
+                                    <p class="new">259 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="home" data-item="Prod7">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod_main product" data-category="home">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <img class="eco_icon" src="./img/icon/eco.svg" alt="ecoIcon">
+                        <div class="myBlock hidden-block">
+                            <p><u>Действует:</u> через 30 минут после обработки</p>
+                            <p><u>Защищает на срок:</u> 1-1,5 месяца</p>
+                            <p><u>Характеристики:</u><br>
+                                Действующее вещество: 25% циперметрина<br>
+                                Расход: 1-2 литра рабочего раствора на 100 м<sup><small>2</small></sup></p>
+                        </div>
+                        <img src="./img/products/fromTicks.jpg" alt="fromTicks">
+                        <div class="prod_footer">
+                            <p class="name_prod">Средство от клещей</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">599 р</p>
+                                    <p class="new">400 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="home" data-item="Prod8">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="fz-22 red product" data-category="eat">Органические фрукты, овощи и ягоды</p>
+                <div class="products_cards">
+                    <div class="prod_main product" data-category="eat">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <div class="myBlock hidden-block">
+                            <p><u>Количество:</u> 1 шт</p>
+                            <p><u>Пищевая ценность на 100гр:</u>
+                                Калорийность — 212 кКал<br>
+                                Содержание белков — 2.0гр<br>
+                                Содержание жиров — 20гр<br>
+                                Содержание углеводов — 6.0гр</p>
+                        </div>
+                        <img src="./img/products/avocado.jpg" alt="avocado">
+                         <div class="prod_footer">
+                            <p class="name_prod">Авокадо</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">300 р</p>
+                                    <p class="new">199 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="eat" data-item="Prod9">В корзину</button>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="prod_main product" data-category="eat">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <div class="myBlock hidden-block">
+                            <p><u>Вес:</u> 900гр</p>
+                            <p><u>Пищевая ценность на 100гр:</u>
+                                Калорийность — 36 кКал<br>
+                                Содержание белков — 0.9гр<br>
+                                Содержание жиров — 0.2гр<br>
+                                Содержание углеводов — 8.1гр</p>
+                        </div>
+                        <img src="./img/products/oranges.jpeg" alt="oranges">
+                        <div class="prod_footer">
+                            <p class="name_prod">Апельсины</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">369 р</p>
+                                    <p class="new">250 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="eat" data-item="Prod10">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod_main product" data-category="eat">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <div class="myBlock hidden-block">
+                            <p><u>Вес:</u> 900гр</p>
+                            <p><u>Пищевая ценность на 100гр:</u>
+                                Калорийность — 28 кКал<br>
+                                Содержание белков — 3.0гр<br>
+                                Содержание жиров — 0.4гр<br>
+                                Содержание углеводов — 5.2гр</p>
+                        </div>
+                        <img src="./img/products/broccoli.jpeg" alt="broccoli">
+                        <div class="prod_footer">
+                            <p class="name_prod">Брокколи</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">699 р</p>
+                                    <p class="new">499 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="eat" data-item="Prod11">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod_main product" data-category="eat">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <div class="myBlock hidden-block">
+                            <p><u>Вес:</u> 200гр</p>
+                            <p><u>Пищевая ценность на 100гр:</u>
+                                Калорийность — 286 кКал<br>
+                                Содержание белков — 30.3гр<br>
+                                Содержание жиров — 14.3гр<br>
+                                Содержание углеводов — 9гр</p>
+                        </div>
+                        <img src="./img/products/mushrooms.jpeg" alt="mushrooms">
+                        <div class="prod_footer">
+                            <p class="name_prod">Белый гриб сушёный</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">650 р</p>
+                                    <p class="new">549 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="eat" data-item="Prod12">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod_main product" data-category="eat">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <div class="myBlock hidden-block">
+                            <p><u>Вес:</u> 900гр</p>
+                            <p><u>Пищевая ценность на 100гр:</u>
+                                Калорийность — 66 кКал
+                                Содержание белков — 0.8гр
+                                Содержание жиров — 0.4гр
+                                Содержание углеводов — 15.2гр</p>
+                        </div>
+                        <img src="./img/products/lychee.jpg" alt="lychee">
+                        <div class="prod_footer">
+                            <p class="name_prod">Личи</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">420 р</p>
+                                    <p class="new">365 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="eat" data-item="Prod13">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod_main product" data-category="eat">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <div class="myBlock hidden-block">
+                            <p><u>Вес:</u> 900гр</p>
+                            <p><u>Пищевая ценность на 100гр:</u>
+                                Калорийность — 19 кКал<br>
+                                Содержание белков — 0.6гр<br>
+                                Содержание жиров — 0.1гр<br>
+                                Содержание углеводов — 4.3гр</p>
+                        </div>
+                        <img src="./img/products/pattisons.jpeg" alt="pattisons">
+                        <div class="prod_footer">
+                            <p class="name_prod">Паттисоны</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">599 р</p>
+                                    <p class="new">400 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="eat" data-item="Prod14">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod_main product" data-category="eat">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <div class="myBlock hidden-block">
+                            <p><u>Вес:</u> 1кг</p>
+                            <p><u>Пищевая ценность на 100гр:</u>
+                                Калорийность — 46.05 кКал<br>
+                                Содержание белков — 1.78гр<br>
+                                Содержание жиров — 1.78гр<br>
+                                Содержание углеводов — 7.92гр</p>
+                        </div>
+                        <img src="./img/products/strawberry.jpeg" alt="strawberry">
+                        <div class="prod_footer">
+                            <p class="name_prod">Клубника</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">500 р</p>
+                                    <p class="new">450 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="eat" data-item="Prod15">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prod_main product" data-category="eat">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <div class="myBlock hidden-block">
+                            <p><u>Вес:</u> 100гр</p>
+                            <p><u>Пищевая ценность на 100гр:</u>
+                                Калорийность — 34 кКал<br>
+                                Содержание белков —  0.9гр<br>
+                                Содержание жиров — 0.1гр<br>
+                                Содержание углеводов — 3гр</p>
+                        </div>
+                        <img src="./img/products/lemon.jpeg" alt="lemon">
+                        <div class="prod_footer">
+                            <p class="name_prod">Лимон</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">100 р</p>
+                                    <p class="new">75 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="eat" data-item="Prod16">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="fz-22 product" data-category="cosmetics">Натуральная уходовая косметика</p>
+                <div class="products_cards">
+                    <div class="prod_main product" data-category="cosmetics">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <img class="eco_icon" src="./img/icon/eco.svg" alt="ecoIcon">
+                        <div class="myBlock hidden-block">
+                            <p><u>Состав:</u> вода артезианская, мяты гидролат, воск нима, масло кунжутное, каприловый триглицерид экстракт микроводоросли токоферол, глицерин, масло бораго</p>
+                            <p>100мл</p>
+                        </div>
+                        <img src="./img/products/bodyСream.png" alt="bodyСream">
+                         <div class="prod_footer">
+                            <p class="name_prod">Крем для тела<br>COSMOS ORGANIC</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">1 200 р</p>
+                                    <p class="new">999 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="cosmetics" data-item="Prod17">В корзину</button>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="prod_main product" data-category="cosmetics">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <img class="eco_icon" src="./img/icon/eco.svg" alt="ecoIcon">
+                        <div class="myBlock hidden-block">
+                            <p><u>Состав:</u> вода артезианская, лаванды гидролат, воск нима, глицерин, кокосовое масло рафинированное, сквалан, бета-глюкан пектин, масло зародышей пшеницы</p>
+                            <p>50мл</p>
+                        </div>
+                        <img src="./img/products/handCream.png" alt="handCream">
+                        <div class="prod_footer">
+                            <p class="name_prod">Крем для рук<br>COSMOS ORGANIC</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">799 р</p>
+                                    <p class="new">450 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="cosmetics" data-item="Prod18">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="prod_main product" data-category="cosmetics">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <img class="eco_icon" src="./img/icon/eco.svg" alt="ecoIcon">
+                        <div class="myBlock hidden-block">
+                            <p><u>Состав:</u> вода артезианская, дециловый глюкозид, гидролат дамасской розы, кокоглюкозид, глицерин, гидролизованный протеин кукурузы, пшеницы и сои, пептиды гороха</p>
+                            <p>200мл</p>
+                        </div>
+                        <img src="./img/products/shampooExtremeRepair.jpg" alt="shampooExtremeRepair">
+                        <div class="prod_footer">
+                            <p class="name_prod">Шампунь Extreme Repair</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">1 199 р</p>
+                                    <p class="new">999 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="cosmetics" data-item="Prod19">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="prod_main product" data-category="cosmetics">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <img class="eco_icon" src="./img/icon/eco.svg" alt="ecoIcon">
+                        <div class="myBlock hidden-block">
+                            <p><u>Состав:</u> экстракт листьев кассии алата, аминолипид валина, фосфолипиды, полиглицерил-4-капрат, полиглицерил-3-рицинолеат, коко-каприлат, рапсовый спирт</p>
+                            <p>200мл</p>
+                        </div>
+                        <img src="./img/products/hairСonditioner.png" alt="hairСonditioner">
+                        <div class="prod_footer">
+                            <p class="name_prod">Кондиционер для волос<br>Time Code</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">1 250 р</p>
+                                    <p class="new">980 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="cosmetics" data-item="Prod20">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="prod_main product" data-category="cosmetics">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <img class="eco_icon" src="./img/icon/eco.svg" alt="ecoIcon">
+                        <div class="myBlock hidden-block">
+                            <p><u>Состав:</u> вода артезианская, дециловый глюкозид, гидролат мяты, кокоглюкозид, гидрогенизированный гидролизат крахмала, каприлил/каприл гликозиды пшеничных отрубей, бетаин, лауриловый спирт, кислота молочная, пропандиол</p>
+                            <p>250мл</p>
+                        </div>
+                        <img src="./img/products/foam.png" alt="foam">
+                        <div class="prod_footer">
+                            <p class="name_prod">Пена для ванн<br>COSMOS ORGANIC</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">499 р</p>
+                                    <p class="new">350 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="cosmetics" data-item="Prod21">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="prod_main product" data-category="cosmetics">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <img class="eco_icon" src="./img/icon/eco.svg" alt="ecoIcon">
+                        <div class="myBlock hidden-block">
+                            <p><u>Состав:</u> вода артезианская, каолин, сферы угольные, цеолит, воск нима, сахарозы стеарат, глицерин, экстракт теоброма какао, токоферол, каприловый триглицерид</p>
+                            <p>50мл</p>
+                        </div>
+                        <img src="./img/products/detox.png" alt="detox">
+                        <div class="prod_footer">
+                            <p class="name_prod">Маска для лица Детокс</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">1 100 р</p>
+                                    <p class="new">879 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="cosmetics" data-item="Prod22">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="prod_main product" data-category="cosmetics">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <img class="eco_icon" src="./img/icon/eco.svg" alt="ecoIcon">
+                        <div class="myBlock hidden-block">
+                            <p><u>Состав:</u> вода артезианская, гидролат розы дамасской, глицерин, экстракт семян льна обыкновенного, экстракт плода сливы какаду, смола склероция, стеарат сахарозы</p>
+                            <p>30мл</p>
+                        </div>
+                        <img src="./img/products/serum.jpg" alt="serum">
+                        <div class="prod_footer">
+                            <p class="name_prod">Сыворотка для лица<br>Lift Filler Serum</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">1 250 р</p>
+                                    <p class="new">899 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="cosmetics" data-item="Prod23">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="prod_main product" data-category="cosmetics">
+                        <button class="detail showBlockBtn">Подробнее</button>
+                        <img class="eco_icon" src="./img/icon/eco.svg" alt="ecoIcon">
+                        <div class="myBlock hidden-block">
+                            <p><u>Состав:</u> вода артезианская, гидролат мяты, глицерил изостеарат, изостеариловый спирт, рапсовый стерол, канделильский воск, глицерин, фермент бацилл, экстракт листьев мирта лимонного, смола склероция,каприловая кислота</p>
+                            <p>30мл</p>
+                        </div>
+                        <img src="./img/products/serum2.jpg" alt="serum">
+                        <div class="prod_footer">
+                            <p class="name_prod">Сыворотка для лица<br>Corrector Serum</p>
+                            <div class="prod_footer__block">
+                                <div class="sum">
+                                    <p class="prev">1 250 р</p>
+                                    <p class="new">899 р</p>
+                                </div>
+                                <button class="add-to-cart" data-category="cosmetics" data-item="Prod24">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="me" id="me">
+            <div class="block_team">
+                <img class="bg_me" src="./img/ream_bg.png" alt="">
+                <img class="bush_bg" src="./img/bush_bg.png" alt="">
+                <div class="block_team_text">
+                    <p class="block_team_bold">Наша команда</p>
+                    <p class="block_team_light">И наша цель</p>
+                </div>
+                <img class="sheet1" src="./img/sheet1.png" alt="greenery">
+                <img class="sheet2" src="./img/sheet2.png" alt="greenery">
+                <img class="flower" src="./img/flower.png" alt="greenery">
+                <img class="sheet4" src="./img/sheet4.png" alt="greenery">
+                <img class="sheet3" src="./img/sheet3.png" alt="greenery">
+                <img class="bush" src="./img/bush.png" alt="bush">
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="img_people">
+                <img src="./img/people.jpg" alt="">
+            </div>
+            <div class="contacts__info">
+                <div class="dib">
+                    <p class="fz-27">Магазин Эко-тренд</p>
+                    <p class="fz-20">Предлагает заботу о вашем здоровье и планете</p>
+                </div>
+                <div class="dib">
+                    <img class="arrow1" src="./img/arrow.png" alt="arrow">
+                </div>
+                <div class="info_mission">
+                    <p class="fz-27">Наша миссия?</p>
+                    <p class="fz-20">Сделать экологически чистые продукты доступными для всех</p>
+                </div>
+                <div class="dib dib_four">
+                    <div class="dib_text">
+                        <p class="fz-27">Для чего?</p>
+                        <p class="fz-20">Для уменьшения экологического вреда и улучшения мира!</p>
+                    </div>
+                    <div class="dib dib__arrow2">
+                        <img class="arrow2" src="./img/arrow.png" alt="arrow">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container connection" id="connection">
+            <div class="dib">
+                <p class="fz-31">Обратная связь</p>
+                <p>Заполните необходимые поля своими данными в приведённой ниже форме и нажмите кнопку «Отправить».<br>
+                Мы свяжемся с вами как можно скорее!</p>
+                <div class="input_connect">
+                    <input type="text" id="textInput1" placeholder="Имя">
+                    <input type="email" id="emailInput" placeholder="Почта">
+                    <input type="text" id="textInput2" placeholder="Сообщение">
+                    <div class="button_connect">
+                        <button id="clearButton" type="button">Отправить</button>
+                    </div>
+                </div>             
+            </div>
+            <div class="dib info_contacts">
+                <p class="title fz-27">Информация</p>
+                <div>
+                    <img src="./img/icon/address.svg" alt="location">
+                    <p class="fz-20">ул. Спиридоновка, 34/1, Москва</p>
+                </div>
+                <div>
+                    <img src="./img/icon/phone.svg" alt="phone">
+                    <p class="fz-20"><a href="tel: 79855444212">+7-985-544-42-12</a></p>
+                </div>
+                <div>
+                    <img src="./img/icon/mail.svg" alt="email">
+                    <p class="fz-20"><a href="https://mail.ru/" target="_blank">ekotrend@mail.ru</a></p>
+                </div>
+                <div>
+                    <img src="./img/icon/clock.svg" alt="clock">
+                    <p class="fz-20">08:00 - 19:00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer">
+            <div class="social">
+                <p class="fz-20">Наши социальные сети</p>
+                <div class="media">
+                    <!-- через VPN -->
+                    <div class="facebook">
+                        <a href="https://m.facebook.com/?locale=ru_RU&_rdr&wtsid=rdr_0pA6wHvbaJVPZEwKE" target="_blank"><img src="./img/icon/facebook.svg" alt="facebook"></a>
+                        <p>facebook</p>
+                    </div>
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="./img/icon/instagram.svg" alt="instagram"></a> 
+                        <p>instagram</p>
+                    </div>
+                   <div class="twitter">
+                        <a href="https://twitter.com/" target="_blank"><img src="./img/icon/twitter.svg" alt="twitter"></a>
+                        <p>twitter</p>
+                   </div> 
+                </div>
+            </div>
+            <div class="dib map_block">
+                <div class="map" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/?ll=37.622306%2C55.756443&source=serp_navig&utm_medium=mapframe&utm_source=maps&z=12" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.622306%2C55.756443&source=serp_navig&z=12" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            </div>
+        </div>
+        <p class="container container_konf">На нашем сайте действует <a class="konf" target="_blank" href="https://www.gnivc.ru/on_gnivts/information_disclosure/pdp/"><u>политика конфиденциальности</u></a></p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const category = button.getAttribute('data-category');
+                    const item = button.getAttribute('data-item');
+                    
+                    // Получение текущего списока товаров из LocalStorage
+                    const cart = JSON.parse(localStorage.getItem('cart')) || {};
+
+                    // Проверка, есть ли уже товары в выбранной категории
+                    if (!cart[category]) {
+                        cart[category] = [];
+                    }
+
+                    // Добавление товар в выбранную категорию
+                    cart[category].push(item);
+
+                    // Сохранение корзины в LocalStorage
+                    localStorage.setItem('cart', JSON.stringify(cart));
+
+                    // window.location.href = '../page/cart.html';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
